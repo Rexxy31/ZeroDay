@@ -7,15 +7,15 @@ const PostDetail = ({ post }) => {
 
         if (obj) {
             if (obj.bold) {
-                modifiedText = (<b key={index}>{text}</b>);
+                modifiedText = (<b key={index}>{modifiedText}</b>);
             }
 
             if (obj.italic) {
-                modifiedText = (<em key={index}>{text}</em>);
+                modifiedText = (<em key={index}>{modifiedText}</em>);
             }
 
             if (obj.underline) {
-                modifiedText = (<u key={index}>{text}</u>);
+                modifiedText = (<u key={index}>{modifiedText}</u>);
             }
         }
 
